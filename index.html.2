@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#173d2b">
+<title>AhmaCraft Games</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">🧱</div>
+  <div>
+    <h1>AhmaCraft Games</h1>
+    <p>Твой игровой мир</p>
+  </div>
+  <button id="home" class="hidden">⌂</button>
+</header>
+
+<main>
+<section id="menu">
+<h2>Выбери игру</h2>
+<div class="games">
+<button class="card green" data-id="ahma">🧱<b>AhmaCraft</b><small>Строй свой мир</small></button>
+<button class="card blue" data-id="minecraft">⛏️<b>Minecraft</b><small>Копай и выживай</small></button>
+<button class="card purple" data-id="mono">🌍<b>Монокрафт</b><small>Собирай ресурсы</small></button>
+<button class="card orange" data-id="kuri">🏕️<b>Куризикрафт</b><small>Приключения</small></button>
+<button class="card red wide" data-id="monopoly">🏠<b>Монополия</b><small>Покупай участки и копи монеты</small></button>
+</div>
+<button id="ai" class="ai">🤖 ИИ-помощник</button>
+<p class="note">Все мини-игры запускаются прямо здесь.</p>
+</section>
+
+<section id="play" class="hidden">
+<div class="heading">
+<h2 id="title"></h2>
+<b id="coins">🪙 0</b>
+</div>
+<p id="info"></p>
+<div id="arena" class="arena"></div>
+<div id="actions" class="actions"></div>
+<button id="back" class="back">← Все игры</button>
+</section>
+
+<section id="chat" class="hidden">
+<h2>🤖 Помощник Ahma</h2>
+<div id="messages" class="messages">
+<p class="bot">Привет! Спроси меня об играх, блоках или монетах.</p>
+</div>
+<form id="form">
+<input id="question" placeholder="Напиши сообщение..." maxlength="250">
+<button>➤</button>
+</form>
+<p class="note">Пока это помощник с готовыми ответами. Для настоящего ИИ нужен безопасный сервер.</p>
+<button id="chatback" class="back">← Все игры</button>
+</section>
+</main>
+
+<footer>AhmaCraft Games · 1.0</footer>
+<script src="app.js"></script>
+</body>
+</html>
